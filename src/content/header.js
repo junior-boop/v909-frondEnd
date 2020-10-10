@@ -1,4 +1,5 @@
 import React, { Component, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import './content.css';
 import car from './images/pub_1.png'
 
@@ -30,13 +31,39 @@ function useWindowSize(){
     return windowSize
 }
 export default function Header(){
-    return(
-        <div className = 'slideBar'>
-            <div style = {images}>
-                <img src = {car} alt = 'pub_1'/>
+    if(window.screen.width <= 500){
+        return(
+            <div className = 'slideBar'>
+                <div className = 'pub'>
+                    <img src = {car} alt = 'pub_1'/>
+                    <div className = 'cover'>
+                        <div className = 'content'>
+                            <p>Achetez une</p>
+                            <p className ='name'>Toyota Yaris 2002</p>
+                            <p className = 'prix'>3 500 000 FCFA</p>
+                        </div>
+                    </div>
+                    <div className = 'desc'>
+                        <div className = 'content'>
+                            <p>Découvrez plus de vehicule dans achat</p>
+                            <Link to ='/achat'>
+                                Achat
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    )
+        )
+    } else {
+        return(
+            <div className = 'slideBar'>
+                <div style = {images}>
+                    <img src = {car} alt = 'pub_1'/>
+                </div>
+            </div>
+        )
+    }
+
 }
 
 const images = {
@@ -44,3 +71,4 @@ const images = {
     alignItems: 'center',
     justifyContent: 'center',
 }
+

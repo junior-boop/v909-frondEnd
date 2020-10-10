@@ -16,7 +16,7 @@ export default class Items extends Component{
         const _ = this.props
         const db = _.db
         let prix = new Intl.NumberFormat('fr-FR', {style: 'currency', currency:'XAF'}).format(db.prix_vent)
-        let imag = db.img_path;
+        let imag = db.imgs;
         let imgName = imag[0].img;
 
     return(
@@ -27,7 +27,7 @@ export default class Items extends Component{
         }} >
             <div className ="items">
                 <div className ="imgs-contain">
-                    <div className ="imgs"><img src = {image}   alt = {imgName} /></div>
+                    <div className ="imgs"><img src = {image}   alt = {imgName}  /></div>
                     <div className = "cover"><p>{db.mark} {db.model} </p></div>
                 </div>
                 <div className ="desc">

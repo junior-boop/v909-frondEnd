@@ -140,6 +140,11 @@ a {
   height: 20px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .paque {
   padding: 12px 26px;
   background-color: rgba(250, 128, 114, 0.7);
@@ -1681,6 +1686,9 @@ a {
 }
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
+  p {
+    font-size: 24px;
+  }
   body {
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -1925,21 +1933,43 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav .container .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .nav .container .logo {
-    display: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 120px;
+    height: 60px;
+    border-right: 1px solid rgba(192, 192, 192, 0.226);
   }
   .nav .container .logo img {
     width: 84px;
+  }
+  .nav .container .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 120px;
+    height: 60px;
+    border-left: 1px solid rgba(192, 192, 192, 0.226);
   }
   .nav .container .nav-block {
     display: -webkit-box;
@@ -1962,13 +1992,14 @@ a {
     font-size: 30px;
   }
   .nav .container .nav-block .menu li + li {
-    margin-left: 15px;
+    margin-right: 15px;
   }
   .slideBar {
-    border: none;
-    border-radius: 0px;
-    width: 100%;
-    height: 600px;
+    border: 1px solid rgba(219, 219, 219, 0.61);
+    margin: 0 auto;
+    border-radius: 24px;
+    width: 93%;
+    height: 700px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2011,6 +2042,83 @@ a {
     margin: 0 auto;
     -webkit-box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.171);
             box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.171);
+  }
+  .slideBar .pub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slideBar .pub img {
+    height: 600px;
+  }
+  .slideBar .pub .cover {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 670px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 24px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 24px;
+  }
+  .slideBar .pub .cover .content {
+    width: 100%;
+  }
+  .slideBar .pub .cover .content p {
+    text-align: center;
+    color: white;
+  }
+  .slideBar .pub .cover .content .name {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 10px;
+  }
+  .slideBar .pub .cover .content .prix {
+    font-size: 36px;
+  }
+  .slideBar .pub .desc {
+    background-color: white;
+    font-weight: 300;
+    height: 100px;
+    padding: 0 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slideBar .pub .desc .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .slideBar .pub .desc .content a {
+    padding: 12px 28px;
+    background-color: #00bbd46e;
+    color: #003f47;
+    font-weight: 500;
+    border-radius: 12px;
   }
   .grid {
     margin: 22px 0 12px 0;
@@ -2102,8 +2210,11 @@ a {
     margin-right: 24px;
   }
   .vide {
-    height: 96px;
+    height: 24px;
     background-color: white;
+  }
+  .vide .logo {
+    display: none;
   }
   .vide .logo img {
     width: 120px;
@@ -2113,10 +2224,10 @@ a {
     margin-top: 40px;
     margin-bottom: 12px;
     margin-left: 24px;
-    border-left: 12px solid #00BCD4;
+    border-left: 4px solid #00BCD4;
   }
   .title p {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
   }
   .thund {
@@ -2937,6 +3048,68 @@ a {
   .grid-3 .p img {
     width: 40px;
     margin-right: 20px;
+  }
+  .localSearch {
+    position: static;
+    top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 72px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 7px;
+    margin-top: 24px;
+  }
+  .locationSearch {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 93%;
+    height: 72px;
+    background-color: #00BCD4;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 7px;
+    -webkit-box-shadow: 0 10px 25px -10px #003c4454;
+            box-shadow: 0 10px 25px -10px #003c4454;
+  }
+  .locationSearch form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .locationSearch form select {
+    font-weight: 'Montserrat';
+    border: none;
+    width: 450px;
+    background-color: #00BCD4;
+    color: white;
+  }
+  .locationSearch form select option {
+    background-color: white;
+    color: black;
+    border: none;
+    height: 25px;
+  }
+  .locationSearch form select::after {
+    border: none;
   }
 }
 /*# sourceMappingURL=content.css.map */

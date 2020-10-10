@@ -107,6 +107,11 @@ a {
     }
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 .paque {
     padding : 12px 26px;
     background-color : rgba(250, 128, 114, 0.7)
@@ -1478,22 +1483,38 @@ a {
             display: flex;
             width: 100%;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
     
             .logo {
-                display: none;
+                display: flex;
+                justify-content: center;
                 align-items: center;
+                width :  120px;
+                height: 60px;
+                border-right: 1px solid  rgba(192, 192, 192, 0.226);
+
     
                 img {
                     width: 84px;
                 } 
+            }
+
+            .contact {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width :  120px;
+                height: 60px;
+                border-left: 1px solid  rgba(192, 192, 192, 0.226);
+    
             }
     
             .nav-block {
                 display:flex;
                 padding: 0;
                 align-items: center;
+
                 .menu {
                     display: flex;
                     margin:0;
@@ -1505,7 +1526,7 @@ a {
             
                     }
                     li+li {
-                        margin-left: 15px;
+                        margin-right: 15px;
                     }
                 }
             
@@ -1515,10 +1536,11 @@ a {
     }
 
     .slideBar {
-        border:none;
-        border-radius: 0px;
-        width: 100%;
-        height: 600px;
+        border:1px solid rgba(219, 219, 219, 0.61);
+        margin: 0 auto;
+        border-radius: 24px;
+        width: 93%;
+        height: 700px;
         flex-direction: column;
     
         .imgsBar {
@@ -1555,6 +1577,66 @@ a {
                 margin: 0 auto;
                 box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.171);
             }
+        }
+
+        .pub {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                height: 600px;
+            }
+
+           .cover {
+               position: absolute;
+               display: flex;
+               align-items: flex-end;
+               width: 670px;
+               height: 600px ;
+               background-color: rgba(0, 0, 0, 0.185);
+               border-radius: 24px;
+               box-sizing: border-box;
+               padding: 24px;
+
+               .content {
+                   width: 100%;
+                   p {
+                    text-align: center;
+                    color: white;
+                   }
+                   .name {
+                       font-size: 40px;
+                       font-weight: 500;
+                       margin: 10px ;
+                   }
+                   .prix {
+                       font-size: 36px;
+                   }
+               }
+           }
+           .desc {
+               background-color: white;
+               font-weight: 300;
+               height: 100px;
+               padding: 0 24px;
+               justify-content: center;
+
+               .content{
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                   flex-direction: row;
+
+                   a {
+                       padding: 12px 28px;
+                       background-color:#00bbd46e ;
+                       color : #003f47;
+                       font-weight: 500;
+                       border-radius: 12px;
+                   }
+               }
+           }
         }
     }
     
@@ -1631,11 +1713,11 @@ a {
         }
     }
     .vide {
-        height: 96px;
+        height: 24px;
         background-color: white;
     
         .logo {
-    
+            display: none;
             img {
                 width: 120px;
             } 
@@ -1646,10 +1728,10 @@ a {
         margin-top : 40px; 
         margin-bottom: 12px;
         margin-left : 24px;
-        border-left: 12px solid #00BCD4;
+        border-left:4px solid #00BCD4;
     
         p {
-            font-size: 45px ;
+            font-size: 40px ;
             font-weight: 700;
         }
     }
@@ -2322,6 +2404,54 @@ a {
             img {
                 width : 40px;
                 margin-right : 20px
+            }
+        }
+    }
+
+    .localSearch {
+        position : static;
+        top: auto;
+        display: flex ;
+        width : 100%;
+        height : 72px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        margin-top: 24px;
+    }
+
+    .locationSearch {
+        display: flex ;
+        width : 93%;
+        height : 72px;
+        background-color: #00BCD4;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        box-shadow: 0 10px 25px -10px #003c4454;
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            select {
+                font-weight: 'Montserrat';
+                border: none;
+                width: 450px ;
+                background-color:#00BCD4 ;
+                color : white;
+    
+                option {
+                    background-color: white;
+                    color : black;
+                    border: none;
+                    height: 25px;
+                }
+            }
+    
+            select::after {
+                border: none;
             }
         }
     }
