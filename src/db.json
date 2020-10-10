@@ -1,8 +1,26 @@
 {
-  "achat": [
-    {"salutation" : "bonjour"}
+  "achat": [],
+  "locations": [
+    {
+      "id": "S-uBJ",
+      "mark": "Toyota",
+      "model": "Corolla",
+      "ans": 2012,
+      "tel": 655733765,
+      "ville": "Yaoundé",
+      "prix_location": 75000,
+      "prix_base": 50000,
+      "desc": "Véhicule offert avec un Chauffeur, pour vos déplacements - La prise en charge du chauffeur est a vos soins - <strong>Kilométrage limité par jour :</strong> 250 Km",
+      "fourniseur": "Polynome",
+      "imgs": "https://cars.usnews.com/static/images/Auto/izmo/355759/2013_toyota_camry_angularfront.jpg",
+      "bv": "Auto",
+      "carb": "Essence",
+      "Enlocation": false,
+      "clim" : true,
+      "note" : 4,
+      "update": 1602368945572
+    }
   ],
-  "locations": [],
   "countAchat": 0,
-  "countLocation": 0
+  "countLocation": 1
 }

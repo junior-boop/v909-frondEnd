@@ -2561,6 +2561,9 @@ ul {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+  .littleModal .lite .headerDesc .imgs img {
+    height: 280px;
+  }
   .littleModal .lite .headerDesc .desc {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3017,6 +3020,9 @@ ul {
     font-size: 24px;
     color: silver;
     font-weight: 500;
+  }
+  .location .descript .grid .p-valeur .prix {
+    font-size: 36px;
   }
   .paque {
     font-size: 36px;

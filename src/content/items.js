@@ -99,14 +99,23 @@ export class Location extends Component {
         const history = _.history
         console.log(_)
 
+        function Clim(){
+            if(data.clim){
+                return 'Oui'
+            } else {
+                return 'Non'
+            }
+        }
+
+
         return(
             <div className = 'location'>
                 <div className = 'imgs'>
                     <div>
-                        <img src ={image} alt = 'images'  />
+                        <img src ={data.imgs} alt = 'images'  />
                     </div>
                     <div className = 'cover' >
-                        <div className = 'T' ><p className = 'p' >{data.marque} {data.modele}</p></div>
+                        <div className = 'T' ><p className = 'p' >{data.mark} {data.model}</p></div>
                         <div className = "T"><p>note : <strong>{data.note} / 5 </strong></p></div>
                     </div>
                     
@@ -114,7 +123,7 @@ export class Location extends Component {
                 <div className = 'descr' >
                     <div className = 'grid-3' >
                         <p className = "p"><img src={bv}  alt ="images"/> {data.bv}</p>
-                        <p className = 'p'><img src={clim}  alt ="images"/>{data.clim}</p>
+                        <p className = 'p'><img src={clim}  alt ="images"/>{Clim()}</p>
                         <p className = 'p'><img src={anns}  alt ="images"/>{data.ans}</p>
                     </div>
                 </div>
@@ -124,7 +133,7 @@ export class Location extends Component {
                             <img src={arg}  alt ="images"/>
                             <div>
                                 <p className = 'pj'>Prix par jour</p>
-                                <p><strong>{prix}</strong></p>
+                                <p className = 'prix'><strong>{prix}</strong></p>
                             </div>
                         </div>
                         <Link 

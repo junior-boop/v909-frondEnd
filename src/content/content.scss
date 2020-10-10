@@ -1986,6 +1986,10 @@ ul {
                     overflow: hidden;
                     border-radius: 7px;
                     box-sizing: border-box;
+
+                    img {
+                        height: 280px;
+                    }
                 }
     
                 .desc {
@@ -2376,6 +2380,9 @@ ul {
                         font-size: 24px;
                         color: silver;
                         font-weight: 500;
+                    }
+                    .prix {
+                        font-size: 36px;
                     }
                 }
             }

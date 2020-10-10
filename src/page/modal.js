@@ -128,9 +128,6 @@ export default class Infos extends Component{
     }
 }
 
-
-
-
 function Diapos(props){
     const data = props.db
     let BV = '' ;
@@ -395,11 +392,17 @@ export class LittleModal extends Component{
                let BV = 'Manuelle'
                 return  BV
             } else {
-                let BV = 'Automatique';
+                let BV = 'Auto.';
                 return BV
             }
         }
-
+        function Clim(){
+            if(data.clim){
+                return 'Oui'
+            } else {
+                return 'Non'
+            }
+        }
         
 
 
@@ -415,17 +418,17 @@ export class LittleModal extends Component{
                 >
                     <div className = 'headerDesc'>
                         <div className = 'imgs'>
-                            <img src = {car_2} height = {choice} alt = 'Images'/>
+                            <img src = {data.imgs} height = {choice} alt = 'Images'/>
                         </div>
                         <div className = 'desc'>
                             <div>
-                                <p className ='mark'>{data.marque} </p>
-                                <p className ='model'>{data.modele} </p>
+                                <p className ='mark'>{data.mark} </p>
+                                <p className ='model'>{data.model} </p>
                                 <br/>
                                 <div className = 'fourLogo'>
-                                    <p className = 'fournis'>fornisseur : {'V909-Rent'} </p>
+                                    <p className = 'fournis'>fornisseur : <strong>{data.fourniseur} </strong></p>
                                     <p>Note : <strong>{data.note} / 5</strong></p>
-                                    <img src = {logo} alt = 'logo' />
+                                    {/* <img src = {logo} alt = 'logo' /> */}
                                     
                                 </div>
                             </div>
@@ -433,7 +436,7 @@ export class LittleModal extends Component{
                     </div>
                     <div className = 'module' >
                         <p className = "p"><img src={bv} style = {imgs} alt ="images"/> {Boite()}</p>
-                        <p className = 'p'><img src={clim} style = {imgs} alt ="images"/>{data.clim}</p>
+                        <p className = 'p'><img src={clim} style = {imgs} alt ="images"/>{Clim()}</p>
                         <p className = 'p'><img src={anns} style = {imgs} alt ="images"/>{data.ans}</p>
                         <p className = "p"><img src={arg} style = {imgs} alt ="images"/><strong>{prix} </strong> /jr</p>
                     </div>
