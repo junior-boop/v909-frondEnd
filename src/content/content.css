@@ -2947,7 +2947,7 @@ ul {
     height: 380px;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(196, 196, 196, 0)), to(#000000));
     background: linear-gradient(180deg, rgba(196, 196, 196, 0) 60%, #000000 100%);
-    padding: 12px;
+    padding: 36px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -2966,7 +2966,7 @@ ul {
     width: 100%;
   }
   .location .imgs .cover .T p {
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 500;
     color: white;
     display: block;
@@ -2992,7 +2992,7 @@ ul {
   }
   .location .descript .grid a {
     padding: 12px 36px;
-    font-size: 30px;
+    font-size: 26px;
     border-radius: 7px;
     background-color: #00d440;
     justify-self: flex-end;
@@ -3003,7 +3003,7 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 30px;
+    font-size: 26px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
