@@ -1,0 +1,8 @@
+{
+  "achat": [
+    {"salutation" : "bonjour"}
+  ],
+  "locations": [],
+  "countAchat": 0,
+  "countLocation": 0
+}
