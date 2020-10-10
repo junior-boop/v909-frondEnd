@@ -24,8 +24,8 @@ export default class Navigation extends Component {
                 <AnimatePresence exitBeforeEnter>
                     <Switch>
                         <Route exact path = '/' component = {Voiture} />
-                        <Route  path ='/location' component = {Locat}/>
-                        <Route  path ='/contact' component = {Us}/>
+                        <Route exact path ='/location' component = {Locat}/>
+                        <Route exact path ='/contact' component = {Us}/>
                     </Switch>
                 </AnimatePresence>
             <Footer />
