@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Navigation from './navigation/navigation';
+import App from './App';
 
 ReactDOM.render(
-   <Navigation /> ,
+   <App /> ,
   document.getElementById('root')
 );
 
