@@ -23,7 +23,7 @@ export default class Navigation extends Component {
             </div>
                 <AnimatePresence exitBeforeEnter>
                     <Switch>
-                        <Route exact path = '/home' component = {Voiture} />
+                        <Route exact path = '/' component = {Voiture} />
                         <Route  path ='/location' component = {Locat}/>
                         <Route  path ='/contact' component = {Us}/>
                     </Switch>
