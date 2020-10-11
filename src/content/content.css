@@ -1952,7 +1952,7 @@ ul {
             align-items: center;
     width: 120px;
     height: 60px;
-    border-right: 1px solid rgba(192, 192, 192, 0.226);
+    border-right: 1px solid #949494;
   }
   .nav .container .logo img {
     width: 84px;
@@ -1969,7 +1969,7 @@ ul {
             align-items: center;
     width: 120px;
     height: 60px;
-    border-left: 1px solid rgba(192, 192, 192, 0.226);
+    border-left: 1px solid #949494;
   }
   .nav .container .nav-block {
     display: -webkit-box;
