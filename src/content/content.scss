@@ -1276,6 +1276,7 @@ ul {
         width: 324px;
         height : 514px;
         border-radius: 24px;
+        border: 1px solid silver;
     
         .imgs-contain {
             overflow: hidden;
@@ -1825,11 +1826,11 @@ ul {
                     width: 93%;
                     margin : 0 auto;
                     height: 570px;
-                    border: 1px solid silver;
+                    border: 1px solid rgba(192, 192, 192, 0.507);
                     box-sizing: border-box;
                     border-radius: 15px;
                     background-color: white;
-                    box-shadow: 0 20px 20px -5px rgba(192, 192, 192, 0.767) ;
+                    box-shadow: 0 20px 10px -5px rgba(192, 192, 192, 0.514) ;
     
                     .details {
                         display: grid;
