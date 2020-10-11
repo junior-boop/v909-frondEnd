@@ -19,6 +19,7 @@ import arg from '../design/icons8-expensive-price-50.png'
 
 
 import car_2 from '../content/images/car_2.jpg'
+import { Helmet } from 'react-helmet';
 
 
 
@@ -43,6 +44,14 @@ export default class Infos extends Component{
             variants = {modalTransition}
         >
             <div className = 'modal'>
+                <Helmet>
+                <meta property="og:site_name" content="v909"/>
+                <meta property="og:title" content= {`${data.mark} ${data.model} | v909`} />
+                <meta property="og:description" content="Site de location et vente de vente des Véhicules " />
+                <meta property="og:image" itemprop="image" content= {data.imgs[3].img} />
+                <meta property="og:type" content="website" />
+                <title>{data.mark} {data.model} | v909 </title>
+                </Helmet>
                 <div className = 'header'>
                     <p className="titleModel">{data.mark} {data.model}</p>
                     <div className = 'autres'>
@@ -64,7 +73,7 @@ export default class Infos extends Component{
                             </div>
                             <div className ="ctn">
                                 <h3>Contactez nous</h3>
-                                <a href ={`https://wa.me/23755733765?text=je%20suis%20intéressé%20par%20votre%20voiture%20de%20marque%20${marque}%20${modele}`} className='wa'>Via WhatsApp</a>
+                                <a href ={`https://wa.me/23755733765?text=je%20suis%20intéressé%20par%20votre%20voiture%20de%20marque%20${marque}%20${modele}%20vu%20sur%20`} className='wa'>Via WhatsApp</a>
                             </div>
                             
                         </div>
