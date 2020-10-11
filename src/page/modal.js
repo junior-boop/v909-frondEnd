@@ -20,40 +20,7 @@ import arg from '../design/icons8-expensive-price-50.png'
 
 import car_2 from '../content/images/car_2.jpg'
 
-const images = [
-    {
-        id : 1,
-        img : 'https://images.caradisiac.com/logos/0/1/4/4/260144/S7-nouvelles-aides-a-l-achat-d-une-voiture-pas-avant-la-rentree-182926.jpg'
-    },
-    {
-        id : 2,
-        img : 'https://lh3.googleusercontent.com/OJeH0xpOGB4Pup7hX5Wxx5TKWIu1row34ACwS3-njVOLtiGuBrF4A9YDC7t2s8_x0ic4qg5lmWxEQVT9E-gwDJAWUZUaEFt9oeEmWJul0l63c6YJ3asgQ75K334hEWg8HUVOSp-SBV0-PlKoS36uaf4mBuG-7re1M7optwCn8R9pa72eGqTTPa4B0UNWo3EYcIgKy-H06hdzsLS0J8w4UbE26uHZAblyxAzWcQ-TSD5KDh7l5UdVWrtK17YtN6-9jiOlhfy8iNcsKg6XINLnjkgWmEgU5MEPjrBqbZgtMX0LDPmlvGRlragnqCJMTACDEkhVzu7w4hxVHk2WdYtuF13iU7t_4hzm5aMvDYzyF2Y-yforHDYc9YkFMWMHJVA6RefdCquFDxIIaN_cKlhuYIi7kYpxQVW34oJYyz0Nco9WTdURK34YQb1ZP0Q2aDfMmqL8dwsmOHe8Zvb9yNwB49uPZgFHcUV9NqFQoVWTbyRu8uMV7678OAq99_MpVFx9Vlh2CCPPy_Qo4B6ctZZxD7e1ShvHzhvaLmrgp-Y0a0jhVnzQeo-CvxuZXR9VsEGEmUo2i6wLJWDSYHm072YHf2hEs_sio2_2UvoqtpJHllLVbqwz9TqFsW9hRuY8bwwV6j8l0iut19eBcfxXgNKJH7LSxIGXy2rVX9tqacwWM_xQ9MhhqEB5Xjt-AKqR=w474-h396-no?authuser=0'
-    },
-    {
-        id : 3,
-        img : 'https://z-p3-scontent.fdla2-1.fna.fbcdn.net/v/t1.0-9/52668757_2267802920174406_7659397367174529024_o.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_eui2=AeEcIl-Xn8M65DSzqWZDNjVHzmQ4Nt8KoVnOZDg23wqhWXBuuE5_KgRLdCiA8mYPVHhyptNUoCsdrYqAOLp4drb7&_nc_ohc=LID9GDtAOjUAX8OtcM4&_nc_ht=z-p3-scontent.fdla2-1.fna&oh=03bc0c77a7dc90b4facadd1ab3898c6b&oe=5FA05CA3'
-    },
-    {
-        id : 4,
-        img : 'https://lh3.googleusercontent.com/enu2xETnZN10ygNpMc_Nmd-8ZumbkKy7CqEVyRJp4tA07W2iqKpt-36qHHxeWGI6VqGpA0EbCsXpdYXwrkRZVFD11FHIJdAtPpApPoxsQUtASt4e-McdwEXq2QVvqTK-RT7f65iFrQi4J23DE_Qf55PAtDJGE2m_F9bto9wZnld1xQTQkz0O86CH1aAeTkhxs3X2_SvG3hbLRtx_zSs4O9tub1kTq_MEzZ7tJ7XNZcjGvGec2DLF8CZ33D-52bNDIBlzOUPjWwqGO3EBzNsvo-broUsoXYZtQOX1RA7o0kzRfH73F6Dg5TVHHlW3ykO9HolSdTlO97truxxpXC2AChYgH8ryPvytIjQpDJ8b3SyTOGpn-c2HXnhzwb5QV6FvcrnC8Z-5xQNlvMLWRniBsm7BCyVYL0neqB2vwH9xHqm59DV83cJnmQc7PsSfprGy4ShSM9u2J38NECncxESZgYn2cQQrJTs6t8RRuMiRPASXUXpA9FgxbUf9hYyZjYOkIES5ZaDMknqdnaUI1fPoetpWdq9ZXrkoLqjLgtVnL7r_t5DW24aEiqhfWEJAmlfLCGqVmCs3if9In9b5R02fZ3_alUc71C3teRCYYjNPyln3x8Htio2CXK4SgIKC6HtBCl9xvTuAP6rx1WbxvwB3NsL8lxi6oxF4qgZxoO_eGAOz-_1FAJKgkBv6rKmG=w895-h667-no?authuser=0'
-    },
-    {
-        id : 5,
-        img : '../images/car_2.jpg'
-    },
-    {
-        id : 6,
-        img : '../images/car_3.jpg'
-    },
-    {
-        id : 7,
-        img : '../images/imgs6.jpg'
-    },
-    {
-        id : 8,
-        img : '../images/yaris1_1.jpg'
-    }
-]
+
 
 const marque = 'Toyota';
 const modele = 'Yaris'
@@ -77,7 +44,7 @@ export default class Infos extends Component{
         >
             <div className = 'modal'>
                 <div className = 'header'>
-                    <p className="titleModel">{data.marque} {data.modele}</p>
+                    <p className="titleModel">{data.mark} {data.model}</p>
                     <div className = 'autres'>
                         { data.vendu 
                         ?   (<p className = "prix">Vendu </p>)
@@ -136,6 +103,7 @@ function Diapos(props){
     } else  {
         BV = 'Manu.'
     }
+    const images = data.imgs
     const [current, setCurrent] = useState(images[0].img)
 
     const th = (i) => {
@@ -172,7 +140,7 @@ function Diapos(props){
                     <p className = "p-det"><img src={anns} width = '30px' alt ="images"/>{data.ans} </p>
                     <p className = "p-det"><img src={km} width = '30px' alt ="images"/>  {data.km_count} km</p>
                     <p className = "p-det"><img src={bv} width = '30px' alt ="images"/> {BV}</p>
-                    <p className = "p-det"><img src={gaz} width = '30px' alt ="images"/>  {data.carburant}</p>
+                    <p className = "p-det"><img src={gaz} width = '30px' alt ="images"/>  {data.carb}</p>
                     <p className = "p-det"><img src={clim} width = '30px' alt ="images"/>{data.clim}</p>
                     <p className = "p-det"><img src={loop} width = '30px' alt ="images"/>{data.ville}</p>
                 </div>
