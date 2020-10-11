@@ -4,7 +4,7 @@ import './content.css'
 import { NavLink, Link } from 'react-router-dom';
 
 export default function NavBar(){
-    if(window.screen.width === 360){
+    if(window.screen.width <= 500){
         return(
             <div className = "nav"> 
                 <div className = "container">
