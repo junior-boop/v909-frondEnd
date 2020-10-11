@@ -716,7 +716,7 @@ ul {
   display: flex;
   width: 100%;
   height: 96px;
-  border-bottom: 1px solid rgba(226, 226, 226, 0.521);
+  border-bottom: 1px solid silver;
   padding: 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -779,7 +779,7 @@ ul {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-left: 20px;
-  border: 1px solid rgba(226, 226, 226, 0.521);
+  border: 1px solid #e2e2e2;
   border-radius: 25px;
   -webkit-transition: background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
@@ -869,7 +869,7 @@ ul {
           flex-direction: column;
   width: 30%;
   height: 500px;
-  border: 0.5px solid rgba(226, 226, 226, 0.521);
+  border: 1px solid silver;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 12px;
@@ -971,6 +971,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 300px;
+  height: 120px;
   border-radius: 12px;
   padding: 0 16px;
   -webkit-box-sizing: border-box;
@@ -2353,13 +2354,13 @@ ul {
     width: 93%;
     margin: 0 auto;
     height: 570px;
-    border: 0.5px solid rgba(226, 226, 226, 0.349);
+    border: 1px solid silver;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 15px;
     background-color: white;
-    -webkit-box-shadow: 0 10px 10px -5px rgba(192, 192, 192, 0.356);
-            box-shadow: 0 10px 10px -5px rgba(192, 192, 192, 0.356);
+    -webkit-box-shadow: 0 20px 20px -5px rgba(192, 192, 192, 0.767);
+            box-shadow: 0 20px 20px -5px rgba(192, 192, 192, 0.767);
   }
   .modal .description .slide .descript .details {
     display: -ms-grid;
