@@ -60,7 +60,7 @@ export default class Infos extends Component{
                         <div className='contact'>
                             <div className='descrit'>
                                 <h3>Description</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et pulvinar sapien, eu consectetur enim. Sed rhoncus, lorem nec blandit dignissim, libero est rutrum purus, vitae iaculis libero turpis vel turpis. Nam convallis ullamcorper mollis</p>
+                                <p>{data.desc} </p>
                             </div>
                             <div className ="ctn">
                                 <h3>Contactez nous</h3>
@@ -178,10 +178,10 @@ function takeWithoutSell(n, ar){
 }
 
 function Suggect(current, model, match, location){
-    const name = db.products
+    const name = db.achat
     const Ar = []
   name.filter((el, key) => { 
-    if(el.marque === current || el.modele === model) {
+    if(el.mark === current || el.model === model) {
        Ar.push(el)
     }
   })
