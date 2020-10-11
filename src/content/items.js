@@ -17,7 +17,7 @@ export default class Items extends Component{
         const db = _.db
         let prix = new Intl.NumberFormat('fr-FR', {style: 'currency', currency:'XAF'}).format(db.prix_vent)
         let imag = db.img_path;
-        let imgName = imag[0].img;
+//         let imgName = imag[0].img;
 
     return(
         <Link to = {{
