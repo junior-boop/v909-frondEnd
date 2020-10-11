@@ -42,8 +42,8 @@ export default function NavBar(){
                     </Link>
                     <div className ="nav-block">
                         <ul className ="menu" >
-                            <li><NavLink to = '/'> Achat</NavLink> </li>
-                            <li><NavLink to = "/location"> Locations</NavLink> </li>
+                            <li><NavLink to = '/achat'> Achat</NavLink> </li>
+                            <li><NavLink to = "/"> Locations</NavLink> </li>
                             <li><NavLink to = "/contact"> Contactez-nous</NavLink> </li>
                         </ul>
                     </div>
