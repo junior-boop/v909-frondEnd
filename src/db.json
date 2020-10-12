@@ -54,7 +54,7 @@
       "ans": 2012,
       "tel": 655733765,
       "ville": "Yaoundé",
-      "prix_location": null,
+      "prix_location": 75000,
       "prix_base": 50000,
       "desc": "Véhicule offert avec un Chauffeur, pour vos déplacements - La prise en charge du chauffeur est a vos soins - <strong>Kilométrage limité par jour :</strong> 250 Km",
       "fourniseur": "Polynome",
