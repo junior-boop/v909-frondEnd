@@ -716,7 +716,7 @@ ul {
   display: flex;
   width: 100%;
   height: 96px;
-  border-bottom: 1px solid silver;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.5);
   padding: 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -869,7 +869,7 @@ ul {
           flex-direction: column;
   width: 30%;
   height: 500px;
-  border: 1px solid silver;
+  border: 1px solid rgba(192, 192, 192, 0.507);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 12px;
@@ -2353,7 +2353,7 @@ ul {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     width: 93%;
-    margin: 10px auto;
+    margin: 30px auto;
     height: 570px;
     border: 1px solid rgba(192, 192, 192, 0.507);
     -webkit-box-sizing: border-box;
