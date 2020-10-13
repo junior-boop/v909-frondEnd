@@ -23,7 +23,7 @@ export default class Items extends Component{
     return(
         <Link to = {{
             pathname : _.route.url,
-            search : `?modal=${db.id} `, 
+            search : `?modal=true `, 
             state : db
         }} >
             <div className ="items">
