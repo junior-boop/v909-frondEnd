@@ -1,6 +1,6 @@
 import React from 'react';
 import './content.css'
-import car from './images/car_3.jpg'
+import car from './images/landing.jpg'
 
 export default function SlidePub(props){
     if(window.screen.width <= 500){
@@ -11,7 +11,7 @@ export default function SlidePub(props){
                 </div>
                 <div className ="desc">
                     <p className = "p-desc"> Découvrez tous les véhicules de location actuellement disponible</p>
-                    <a className ="link" href ="/location" >Cliquez ici</a>
+                    <a className ="link" href ="/" >Cliquez ici</a>
                 </div>
             </div>
         )
@@ -22,8 +22,8 @@ export default function SlidePub(props){
                     <img src= {car} alt ="images"/>
                 </div>
                 <div className ="desc">
-                    <p className = "p-desc"> Découvrez tous les véhicules de location actuellement disponible</p>
-                    <a className ="link" href ="/location" >Cliquez ici</a>
+                    <p className = "p-desc"> Visitez nos véhicules en Location</p>
+                    <a className ="link" href ="/" >Cliquez ici</a>
                 </div>
             </div>
         )

@@ -56,7 +56,7 @@ export default function Header(){
         )
     } else {
         return(
-            <div className = 'slideBar'>
+            <div className = 'SlidePub'>
                 <div style = {images}>
                     <img src = {car} alt = 'pub_1'/>
                 </div>

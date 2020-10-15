@@ -31,11 +31,12 @@ export default class Infos extends Component{
         const _ = this.props;
         const location =_.location;
         const match = _.route
-        const data = _.db
+        const data = location.state
         const prix = new Intl.NumberFormat('fr-FR', {style : 'currency', currency : 'XAF'}).format(data.prix_vent)
-        const current  = data.marque;
-        const model = data.modele;
+        const current = marque;
+        const model = modele;
 
+        console.log(data)
     return(
         <motion.div id ='spaceModal' role = 'button' 
             exit = "out"
@@ -169,7 +170,7 @@ const take = (n, arr) => {
     return NArr
 }
 
-function takeWithoutSell(n, ar){
+export function takeWithoutSell(n, ar){
     const takeAll = () =>{
         const Ar = []
         for(let a of ar){if(!a.vendu){Ar.push(a)}}
@@ -340,7 +341,7 @@ export class LittleModal extends Component{
 
             if (val1 <= -1){
                 return(
-                    <div style = {{display : 'flex', width : '100%', borderRadius : 7, padding : '16px 0', justifyContent : "center", alignItems : 'center', backgroundColor : 'rgba(255, 0, 0, 0.222)' }}>
+                    <div style = {{display : 'flex', width : '100%', borderRadius : 7, padding : '16px', justifyContent : "center", alignItems : 'center', backgroundColor : 'rgba(255, 0, 0, 0.222)', boxSizing : 'border-box'}}>
                         <p style = {{color : 'rgb(129, 0, 0)'}} >La séléction ne peut se faire avec des journées déjà passé</p>
                     </div>
                 )
@@ -356,7 +357,7 @@ export class LittleModal extends Component{
                         <p>La location s'étalera sur un durée de <strong>{un()} jour(s) </strong></p>
                         <p>Du <strong>{debut}</strong> au <strong>{fin}</strong> </p>
                         <p></p>
-                        <p style = {CalPrix}>Prix Total de la Location {calcPrix()} </p>
+                        <p style = {CalPrix}>Prix Total de la Location <strong>{calcPrix()}</strong> </p>
                     </div>
                 )
             }
@@ -474,7 +475,7 @@ export class LittleModal extends Component{
 const input = {height : 32, boxSizing : 'border-box', width : '100%', marginTop:'5px'}
 const imgs = {width : 16}
 let choice = 220
-const CalPrix = {fontSize : 16, fontWeight : 400, color : 'red'}
+const CalPrix = {fontSize : 18, fontWeight : 400, color : 'red', marginTop : 25}
 if (window.screen.width <= 400){
     input.height = 60
     imgs.width = 36

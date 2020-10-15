@@ -29,7 +29,7 @@ export default class Navigation extends Component {
                     </Switch>
                 </AnimatePresence>
             <Footer />
-            <Route path ='/' component = {Modal} />
+            <Route path ='/achat' component = {Modal} />
             <Route path = '/' component = { LiteModal } />
        </BrowserRouter>
     );

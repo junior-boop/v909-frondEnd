@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: #fafafa;
+    background-color: #f5f5f5;
     width: 100%;
     font-family: Montserrat;
     box-sizing : border-box;
@@ -19,7 +19,6 @@ a {
 /* style de chaque elements*/
 
 .items {
-    display: flex;
     width: 195px;
     height : 310px;
     // border : 1px solid rgba(226, 226, 226, 0.521);
@@ -224,7 +223,7 @@ ul {
 
 /* slidePub */
 
-.slideBar {
+.SlidePub{
     display: flex;
     border: 1px solid rgba(226, 226, 226, 0.521);
     border-radius: 12px;
@@ -232,11 +231,21 @@ ul {
     height: 350px;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.slideBar {
+    display: flex;
+    border: 1px solid rgba(226, 226, 226, 0.521);
+    border-radius: 12px;
+    width: 1081px;
+    height: 225px;
+    box-sizing: border-box;
+    overflow: hidden;
 
     .imgsBar {
         display: flex;
         width : 781px;
-        height: 350px;
+        height: 225px;
         overflow: hidden;
         box-sizing: border-box;
         justify-content: center;
@@ -255,7 +264,7 @@ ul {
         justify-content: flex-end;
         padding: 24px;
         box-sizing: border-box;
-        background-color:  #7cedfc;
+        background-color:  white;
         
         .p-desc {
             font-size: 24px;
@@ -279,6 +288,14 @@ ul {
     }
 }
 
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%;
+     height : 485px;
+     background-color: #494949;
+}
 
 /* la bar de navigation*/
 .nav {
@@ -885,6 +902,7 @@ ul {
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid rgba(224, 224, 224, 0.486);
+    background-color: white;
 
     .imgs {
         display: flex;
@@ -1697,6 +1715,7 @@ ul {
         margin-bottom: 118px;
     
         .container {
+            justify-content: center;
             width: 100%;
             padding: 24px;
             box-sizing: border-box;
@@ -1977,6 +1996,7 @@ ul {
             height: 100%;
             background-color: white;
             border-radius: 0px;
+            overflow: scroll;
     
             .headerDesc {
                 display: flex;
@@ -2010,7 +2030,7 @@ ul {
                     box-sizing: border-box;
     
                     p {
-                        font-size: 28px;
+                        font-size: 20px;
                     }
     
                     .mark {
@@ -2066,7 +2086,7 @@ ul {
             }
     
             p {
-                font-size: 24px;
+                font-size: 16px;
                 margin-top: 10px;
             }
             .des {
@@ -2116,13 +2136,13 @@ ul {
                     }
     
                    .bottom {
-                        position : absolute;
-                        bottom: 20px;
+                        position : relative;
+                        bottom: -25px;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
                         align-items: center;
-                        width: 93%;
+                        width: 100%;
                         height: 120px;
                         padding: 0 20px;
                         border-radius: 7px;

@@ -4,6 +4,7 @@ import Items from '../content/items';
 import SlidePub from '../content/slidePub';
 import db from '../db.json'
 import { motion } from 'framer-motion'
+import Diapo from '../content/diapo';
 
 export const pageTransition = {
     in : {
@@ -44,6 +45,15 @@ const car = [
 
 ]
 
+
+const Style = {
+    display : 'flex'
+}
+
+if(db.achat.length <= 20){
+    Style.display = 'none'
+}
+
 export default class Voiture extends Component{
     constructor(props){
         super(props)
@@ -80,8 +90,10 @@ export default class Voiture extends Component{
 
     render(){
         const _ = this.props;
+        const history = _.history
         const match = _.match;
         const location =  _.location;
+        const staticContext = _.staticContext
         const product = db.achat
 
         let value_1 = this.state.value_1;
@@ -147,6 +159,8 @@ export default class Voiture extends Component{
             }
         }
 
+        console.log(_)
+
 
         return(
             <motion.div className = "body" 
@@ -155,12 +169,13 @@ export default class Voiture extends Component{
             animate = "in"
             variants = {pageTransition}
             >
+                <Diapo history = {history} match = {match} location = {location} staticContext = {staticContext} />
                 <div className ="container" >
                     <SlidePub />
                     <Marques />
                     {!value_1 || !value_2 ? (<Title title ='Toutes les Voitures'/>) : (<Title title ={`Toutes les ${value_1} ${value_2} (${element_2().length})`}  />)}
                     <div className = 'grid'>
-                        <div id = 'items' className = 'items' >
+                        <div id = 'items' className = 'items' style = {Style} >
                             <div className ='search'>
                                 <form onChange = {this.handleContent}  onSubmit = {this.handleSubmit}>
                                     <label>Faites votre Recherche</label>
