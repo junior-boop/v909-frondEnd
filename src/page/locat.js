@@ -33,7 +33,6 @@ export default class Locat extends Component{
         const _ = this.props
         const data = db.locations
         const value = this.state.value_1
-        console.log(_)
 
         const match = _.match
         const location = _.location

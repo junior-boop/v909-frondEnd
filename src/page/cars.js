@@ -169,7 +169,11 @@ export default class Voiture extends Component{
             animate = "in"
             variants = {pageTransition}
             >
-                <Diapo history = {history} match = {match} location = {location} staticContext = {staticContext} />
+                {
+                    window.screen.width >= 1081
+                    ? <Diapo history = {history} match = {match} location = {location} staticContext = {staticContext} />
+                    : null
+                }
                 <div className ="container" >
                     <SlidePub />
                     <Marques />

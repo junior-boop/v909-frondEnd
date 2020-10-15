@@ -8,6 +8,8 @@ import {takeWithoutSell} from '../page/modal'
 import './content.css';
 import Items from './items';
 
+
+
 const landing  = {
     display : 'flex',
     justifyContent : 'center',
@@ -61,6 +63,9 @@ const horizontalScroll = {
     overflow : 'hidden'
 }
 
+if(data.achat.length < 20){
+    landing.display = 'none'
+}
 
 export default class Diapo extends Component {
 

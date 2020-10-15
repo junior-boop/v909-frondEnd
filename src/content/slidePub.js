@@ -1,13 +1,14 @@
 import React from 'react';
 import './content.css'
 import car from './images/landing.jpg'
+import car_2 from './images/car_3.jpg'
 
 export default function SlidePub(props){
     if(window.screen.width <= 500){
         return(
             <div className ="slideBar" onScroll = {scroll()}>
                 <div className = "imgsBar">
-                    <img src= {car} alt ="images"/>
+                    <img src= {car_2} alt ="images"/>
                 </div>
                 <div className ="desc">
                     <p className = "p-desc"> Découvrez tous les véhicules de location actuellement disponible</p>
