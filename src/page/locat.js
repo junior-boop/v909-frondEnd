@@ -5,8 +5,23 @@ import { Title } from './cars';
 import db from '../db.json'
 import { motion } from 'framer-motion'
 
+import data from '../content/database/db'
 
 import { pageTransition } from './cars'
+
+// const api = 'https://api.npoint.io/e909dbcf64f0a7193c8b'
+
+// export default async function response(){
+//     await fetch(db)
+//     .then(response => response.json())
+//     .then(dt => {
+//         console.log(dt.length)
+//     })
+//     .catch((error) => {
+//     console.error('Error:', error);
+//     });
+// }
+
 
 
 const car = ['Toyota', 'Renauld', 'Mercedes', 'Vols Wagen', 'Hyundai']
@@ -42,7 +57,7 @@ export default class Locat extends Component{
             let Ar = []
             if (value){
                 data.map((el) => {
-                    if(value === el.marque){
+                    if(value === el.mark){
                         Ar.push(el)
                     }
                 })
@@ -52,7 +67,7 @@ export default class Locat extends Component{
         const affiche_1 = () => {
             let Ar = [];
             data.map((el) => {
-                if( value !== el.modele){
+                if( value !== el.model){
                     Ar.push(el)
                 }
             })

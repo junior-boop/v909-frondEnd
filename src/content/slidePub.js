@@ -6,7 +6,7 @@ import car_2 from './images/car_3.jpg'
 export default function SlidePub(props){
     if(window.screen.width <= 500){
         return(
-            <div className ="slideBar" onScroll = {scroll()}>
+            <div className ="slideBar">
                 <div className = "imgsBar">
                     <img src= {car_2} alt ="images"/>
                 </div>
@@ -18,7 +18,7 @@ export default function SlidePub(props){
         )
     } else {
         return(
-            <div className ="slideBar" onScroll = {scroll()}>
+            <div className ="slideBar">
                 <div className = "imgsBar">
                     <img src= {car} alt ="images"/>
                 </div>
@@ -31,11 +31,3 @@ export default function SlidePub(props){
     }
     
 }
-
-
-function scroll(){
-    const move = window.scrollY
-    console.log(move) 
-}
-
-scroll()

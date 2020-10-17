@@ -12,13 +12,10 @@ import {modalTransition} from './cars'
 
 import close from '../design/icons8-delete-50.png'
 import db from '../db.json'
-import Items, { LittleItem } from '../content/items';
+import { LittleItem } from '../content/items';
 import { Link } from 'react-router-dom';
-import logo from '../content/v909.jpg'
 import arg from '../design/icons8-expensive-price-50.png'
 
-
-import car_2 from '../content/images/car_2.jpg'
 import { Helmet } from 'react-helmet';
 
 
@@ -163,7 +160,7 @@ function Diapos(props){
 }
 
 
-const take = (n, arr) => {
+export const take = (n, arr) => {
     let NArr = []
     let i = 0;
     for(i; i < n; i++){ if (arr[i] !== undefined) {NArr.push(arr[i]) } }
@@ -187,7 +184,7 @@ export function takeWithoutSell(n, ar){
     return takeN(takeAll());
 }
 
-function Suggect(current, model, match, location){
+export function Suggect(current, model, match, location){
     const name = db.achat
     const Ar = []
   name.filter((el, key) => { 
@@ -204,7 +201,7 @@ function Suggect(current, model, match, location){
 }
 
 
-const suggect = {
+export const suggect = {
    display : 'flex', 
    flexDirection : 'column',
    alignItems: 'flex-start',
@@ -452,7 +449,7 @@ export class LittleModal extends Component{
                             <div>
                                 <div className = 'bottom' style = {opacity} >
                                     <p>Cette opération sera validé via votre <strong>WhatsApp</strong>. Cliquez sur le bouton pour continuer</p>
-                                    <button type = 'submit' className = 'btn'  ><a href ={`https://wa.me/237655733765?text=Nom%20Clien%20:%20M./Mme%20${content.customer};%20Voiture%20solicité%20:%20${data.marque}%20${data.modele}%20${data.ans};%20Ville%20:%20${content.ville};%20Durée%20:%20${content.eventType}jours;%20%20%20A%20compter%20du%20:%20${content.dayNbrs}`} >Valider</a></button>
+                                    <button type = 'submit' className = 'btn'  ><a href ={`https://wa.me/237655733765?text=Nom%20Clien%20:%20M./Mme%20${content.customer};\r\n%20Voiture%20solicité%20:%20${data.mark}%20${data.model}%20${data.ans};\r\n%20Ville%20:%20${content.ville};\r\n%20Durée%20:%20${content.eventType}jours;\r\n%20%20%20A%20compter%20du%20:%20${content.dayNbrs};\r\n%20Somme%20total%20:%20${calcPrix()}`} >Valider</a></button>
                                     <div style = {bloc}></div>
                                 </div>
                             </div>

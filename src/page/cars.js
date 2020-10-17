@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../content/content.css';
 import Items from '../content/items';
 import SlidePub from '../content/slidePub';
+import data from '../content/database/db'
 import db from '../db.json'
 import { motion } from 'framer-motion'
 import Diapo from '../content/diapo';
@@ -45,6 +46,13 @@ const car = [
 
 ]
 
+function Db(){
+    data().then(data => {
+        return data
+    })
+}
+
+console.log(Db())
 
 const Style = {
     display : 'flex'
