@@ -12,7 +12,7 @@ export default async function response(){
     await fetch(db)
     .then(response => response.json())
     .then(dt => {
-        for(let a of dt.achat){
+        for(let a of dt.locations){
             Achat.push(a)
         }
     })
