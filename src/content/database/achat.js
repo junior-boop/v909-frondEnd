@@ -7,9 +7,9 @@ export async function Achat(){
     .then(response => response.json())
     .then(dt => {
         for(let a of dt.achat){
-            achat.push(a)
-        }
-    })
+            achat.push(a) 
+            }
+        })
     .catch((error) => {
     console.error('Error:', error);
     });
