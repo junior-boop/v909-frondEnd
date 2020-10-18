@@ -12,9 +12,7 @@ export default async function response(){
     await fetch(db)
     .then(response => response.json())
     .then(dt => {
-        for(let a of dt.locations){
-            Achat.push(a)
-        }
+        console.log(dt)
     })
     .catch((error) => {
     console.error('Error:', error);
