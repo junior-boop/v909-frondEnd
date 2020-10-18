@@ -1,19 +1,13 @@
-import low from 'lowdb'
-import localStore from 'lowdb/adapters/LocalStorage'
-
-const adapter = new localStore('db')
-const data = low(adapter)
-
 const db = 'https://api.npoint.io/e909dbcf64f0a7193c8b'
 
-const Achat =[]
+const achat = []
 
-export default async function response(){
+export async function Achat(){
     await fetch(db)
     .then(response => response.json())
     .then(dt => {
         for(let a of dt.achat){
-            Achat.push(a)
+            achat.push(a)
         }
     })
     .catch((error) => {
@@ -21,4 +15,4 @@ export default async function response(){
     });
 }
 
-console.log(Achat)
+export default achat

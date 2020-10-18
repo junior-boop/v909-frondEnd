@@ -105,7 +105,6 @@ export class Location extends Component {
         const match =  _.route;
         const location = _.location;
         const history = _.history
-        console.log(_)
 
         function Clim(){
             if(data.clim){
@@ -115,12 +114,11 @@ export class Location extends Component {
             }
         }
 
-
         return(
             <div className = 'location'>
                 <div className = 'imgs'>
                     <div>
-                        <img src ={data.imgs} alt = 'images'  />
+                       
                     </div>
                     <div className = 'cover' >
                         <div className = 'T' ><p className = 'p' >{data.mark} {data.model}</p></div>

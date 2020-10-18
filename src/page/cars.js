@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import '../content/content.css';
 import Items from '../content/items';
 import SlidePub from '../content/slidePub';
-import data from '../content/database/db'
 import db from '../db.json'
 import { motion } from 'framer-motion'
 import Diapo from '../content/diapo';
+
+import achat from '../content/database/achat'
 
 export const pageTransition = {
     in : {
@@ -46,13 +47,7 @@ const car = [
 
 ]
 
-function Db(){
-    data().then(data => {
-        return data
-    })
-}
-
-console.log(Db())
+console.log(achat)
 
 const Style = {
     display : 'flex'
@@ -167,7 +162,6 @@ export default class Voiture extends Component{
             }
         }
 
-        console.log(_)
 
 
         return(

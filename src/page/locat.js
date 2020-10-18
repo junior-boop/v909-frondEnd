@@ -5,7 +5,9 @@ import { Title } from './cars';
 import db from '../db.json'
 import { motion } from 'framer-motion'
 
-import data from '../content/database/db'
+import locations from '../content/database/locations'
+
+import copy from '../copy.json'
 
 import { pageTransition } from './cars'
 
@@ -22,7 +24,7 @@ import { pageTransition } from './cars'
 //     });
 // }
 
-
+console.log(locations)
 
 const car = ['Toyota', 'Renauld', 'Mercedes', 'Vols Wagen', 'Hyundai']
 
@@ -51,8 +53,8 @@ export default class Locat extends Component{
 
         const match = _.match
         const location = _.location
-        const history = _.history
         
+
         const element_2 = () => {
             let Ar = []
             if (value){
@@ -64,6 +66,14 @@ export default class Locat extends Component{
             }
             return Ar 
         }
+
+        const element_test = () => {
+            fetch(copy)
+            .then(res => res.json())
+            .then(data => console.log(data))
+        }
+
+        
         const affiche_1 = () => {
             let Ar = [];
             data.map((el) => {
@@ -108,10 +118,11 @@ export default class Locat extends Component{
                             !value 
                             ? data.map((el, key) => <Location data = {el} route = {match} location = {location} id = {key} />) 
                             : element_2().map((el, key) => <Location data = {el} route = {match} location = {location} id = {key} />)
-                        }
+                    }
                     </div>
                     {value ? (<Title title ={`Le reste de marque disponible`}/>) : null}
                     <div className = 'grid-4'>
+                        {element_test()}
                         {
                             value
                             ? affiche_1().map((el, key) => <Location data = {el} route = {'match'} location = {'location'} id = {'key'} />)
