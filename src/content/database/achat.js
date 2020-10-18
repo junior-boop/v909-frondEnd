@@ -14,5 +14,5 @@ export async function Achat(){
     console.error('Error:', error);
     });
 }
-
+console.log(achat)
 export default achat

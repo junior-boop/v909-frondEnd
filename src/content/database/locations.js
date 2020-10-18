@@ -15,4 +15,5 @@ async function Location(){
     });
 }
 
+console.log(locations)
 export default locations
