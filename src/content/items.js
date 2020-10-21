@@ -113,12 +113,12 @@ export class Location extends Component {
                 return 'Non'
             }
         }
-
+	const imgs = data.imgs
         return(
             <div className = 'location'>
                 <div className = 'imgs'>
                     <div>
-                       <img src=`${data.imgs}` alt=`${data.mark}` />
+                       <img src={imgs} alt={imgs} />
                     </div>
                     <div className = 'cover' >
                         <div className = 'T' ><p className = 'p' >{data.mark} {data.model}</p></div>
