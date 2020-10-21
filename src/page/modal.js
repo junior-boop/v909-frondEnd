@@ -417,7 +417,7 @@ export class LittleModal extends Component{
                     </div>
                     <div className = 'des'>
                         <p className = 'ti'>Description du service</p>
-                        <p>Véhicule offert avec un Chauffeur, pour vos deplacements - La prise en charge du chauffeur est a vos soins - <strong>Kilométrage limité par jour :</strong> 250 Km </p>
+                        <p>{data.desc}</p>
                     </div>
                     {/* <div className = 'nb'>
                         <p><strong>NB :</strong>  Suite à certains problèmes techniques, nous vous proposont de continuer la discusion via WhatsApp</p>
