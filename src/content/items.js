@@ -118,7 +118,7 @@ export class Location extends Component {
             <div className = 'location'>
                 <div className = 'imgs'>
                     <div>
-                       <img src=`${data.imgs}` alt=`${data.mark} ${data.model}` />
+                       <img src=`${data.imgs}` alt=`${data.mark}` />
                     </div>
                     <div className = 'cover' >
                         <div className = 'T' ><p className = 'p' >{data.mark} {data.model}</p></div>
