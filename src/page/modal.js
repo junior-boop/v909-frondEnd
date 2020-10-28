@@ -105,7 +105,7 @@ export default class Infos extends Component{
 function Diapos(props){
     const data = props.db
     let BV = '' ;
-    if (data.bv === 'automatique' || data.bv === 'Automatique'){
+    if (data.bv === 'auto' || data.bv === 'Auto'){
         BV = 'Auto.'
     } else  {
         BV = 'Manu.'
