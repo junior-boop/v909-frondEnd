@@ -110,6 +110,12 @@ function Diapos(props){
     } else  {
         BV = 'Manu.'
     }
+    let Clim = ''
+    if (data.clim === true) {
+        Clim = 'Oui'
+    } else {
+        Clim = 'Non'
+    }
     const images = data.imgs
     const [current, setCurrent] = useState(images[0].img)
 
@@ -148,7 +154,7 @@ function Diapos(props){
                     <p className = "p-det"><img src={km} width = '30px' alt ="images"/>  {data.km_count} km</p>
                     <p className = "p-det"><img src={bv} width = '30px' alt ="images"/> {BV}</p>
                     <p className = "p-det"><img src={gaz} width = '30px' alt ="images"/>  {data.carb}</p>
-                    <p className = "p-det"><img src={clim} width = '30px' alt ="images"/>{data.clim}</p>
+                    <p className = "p-det"><img src={clim} width = '30px' alt ="images"/>{Clim}</p>
                     <p className = "p-det"><img src={loop} width = '30px' alt ="images"/>{data.ville}</p>
                 </div>
                 <div className ='contentImg'>
