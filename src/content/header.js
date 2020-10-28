@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import './content.css';
 import car from './images/pub_1.png'
-import promo from './images/20201022_135638.jpg'
+import promo from './images/2020-10-28 16.27.23.jpg'
 
 // function Size(){
 //     const size = useWindowSize()
