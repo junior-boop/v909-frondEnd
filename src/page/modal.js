@@ -71,7 +71,7 @@ export default class Infos extends Component{
                             </div>
                             <div className ="ctn">
                                 <h3>Contactez nous</h3>
-                                <a href ={`https://wa.me/23755733765?text=je%20suis%20intéressé%20par%20votre%20voiture%20de%20marque%20${marque}%20${modele}%20vu%20sur%20`} className='wa'>Via WhatsApp</a>
+                                <a href ={`https://wa.me/23755733765?text=je%20suis%20intéressé%20par%20votre%20voiture%20de%20marque%20${data.mark}%20${data.model}%20vu%20sur%20https://v909.vercel.app/achat`} className='wa'>Via WhatsApp</a>
                             </div>
                             
                         </div>
