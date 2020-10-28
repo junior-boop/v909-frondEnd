@@ -30,7 +30,7 @@ export default class Items extends Component{
         }} >
             <div className ="items" style = {Style}>
                 <div className ="imgs-contain">
-                    <div className ="imgs"><img src = {imgName}   alt = {imgName}  /></div>
+                    <div className ="imgs"><img src = {imgName}   alt = {`${db.mark} ${db.model}`}  /></div>
                     <div className = "cover"><p>{db.mark} {db.model} </p></div>
                 </div>
                 <div className ="desc">
